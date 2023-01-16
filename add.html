@@ -14,14 +14,14 @@
       href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
     />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
           <!-- Title -->
-          <span class="mdl-layout-title">Test Yourself</span>
+          <span class="mdl-layout-title">Add Vocabulary</span>
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation. We hide it in small screens. -->
@@ -32,7 +32,7 @@
         </div>
       </header>
       <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">Your Vocab</span>
+        <span class="mdl-layout-title">Add Vocabulary</span>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="index.html">Test Yourself</a>
           <a class="mdl-navigation__link" href="add.html">Add</a>
@@ -40,23 +40,39 @@
       </div>
       <main class="mdl-layout__content">
         <div class="page-content">
-          What does 
-          <h1>{WORT}?</h1>
-          mean?
+          <!-- Your content goes here -->
 
           <form action="#">
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" type="text" id="sample3">
-              <label class="mdl-textfield__label" for="sample3">Italian</label>
+            <div
+              class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+            >
+              <input
+                class="mdl-textfield__input"
+                type="text"
+                id="italianText"
+              />
+              <label class="mdl-textfield__label" for="italianText"
+                >Italian</label
+              >
             </div>
 
+            <div
+              class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+            >
+              <input
+                class="mdl-textfield__input"
+                type="text"
+                id="englishText"
+              />
+              <label class="mdl-textfield__label" for="englishText"
+                >English</label
+              >
+            </div>
             <button
               class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
             >
               Add
             </button>
-          </form>
-            </div>
           </form>
         </div>
       </main>
